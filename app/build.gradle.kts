@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.ksp)
 }
 
 android {
@@ -86,4 +87,15 @@ dependencies {
 
     // Debug tools
     debugImplementation(libs.androidx.compose.ui.tooling)
+
+    // Room
+    implementation("androidx.room:room-runtime:2.8.4")
+    implementation("androidx.room:room-ktx:2.8.4")
+    ksp("androidx.room:room-compiler:2.8.4")
+
+    // WorkManager
+    implementation("androidx.work:work-runtime-ktx:2.11.2")
+
+    // Java Diff Utils
+    implementation("io.github.java-diff-utils:java-diff-utils:4.15")
 }
