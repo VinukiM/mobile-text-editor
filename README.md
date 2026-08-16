@@ -37,6 +37,7 @@ This reduces unnecessary storage duplication while allowing previous versions to
 * SQLite / Room Persistence Library
 * java-diff-utils
 * Git and GitHub
+* Jetpack Compose
 
 ## Team Members
 
